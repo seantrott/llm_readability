@@ -7,7 +7,7 @@ In summary, I used GPT-4 Turbo to estimate the readability of text excerpts in t
 
 ## Data
 
-`CLEAR-Corpus` contains the raw `.csv` file with the original corpus.
+`raw` contains the raw `.csv` file with the original corpus.
 
 `processed/readability_basic_gpt-4-1106-previous.csv` contains the judgments from GPT-4 Turbo.
 

@@ -1,6 +1,6 @@
 # LLMs and Readability
 
-This repository contains code and data to reproduce the analyses described in this newsletter post.
+This repository contains code and data to reproduce the analyses described in [this newsletter post](https://seantrott.substack.com/p/measuring-the-readability-of-texts).
 
 In summary, I used GPT-4 Turbo to estimate the readability of text excerpts in the [CLEAR corpus](https://link.springer.com/article/10.3758/s13428-022-01802-x), and then asked how precise these estimates were.
 

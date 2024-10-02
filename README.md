@@ -1,18 +1,20 @@
 # LLMs and Readability
 
-This repository contains code and data to reproduce the analyses described in [this newsletter post](https://seantrott.substack.com/p/measuring-the-readability-of-texts).
+This repository contains code and data to:
 
-In summary, I used GPT-4 Turbo to estimate the readability of text excerpts in the [CLEAR corpus](https://link.springer.com/article/10.3758/s13428-022-01802-x), and then asked how precise these estimates were.
+- Estimate readability of text excerpts in the [CLEAR corpus](https://link.springer.com/article/10.3758/s13428-022-01802-x) using GPT-4 Turbo and GPT-4o mini.  
+- Calculate intrinsic dimensionality of embedding matrices for text excerpts using RoBERTa.
+- Analyze results.
 
 
 ## Data
 
 `raw` contains the raw `.csv` file with the original corpus.
 
-`processed/readability_basic_gpt-4-1106-previous.csv` contains the judgments from GPT-4 Turbo.
+`processed/readability_basic_gpt-4-1106-previous.csv` contains the judgments from GPT-4 Turbo and `readability_basic_gpt-4o-mini-2024-07-18.csv` contains the judgments from GPT-4o mini.
 
 ## Notebooks
 
 See `Exploring CLEAR Dataset` for descriptive statistics and visualizations of the CLEAR corpus.
 
-See `GPT and Readability` for the pipeline to actually create the readability estimates, as well as analyze and compare them to the human gold standard.
+See `GPT and Readability` for the pipeline to actually create the readability estimates from GPT.
